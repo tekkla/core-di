@@ -1,0 +1,35 @@
+{
+    "name": "tekkla/core-di",
+    "description": "DI manager for services, factories and values.",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org/"
+        }
+    ],
+    "license": "MIT",
+    "keywords": [
+        "Dependency Injection",
+        "DI",
+        "Service",
+        "Factory",
+        "Value"
+    ],
+    "autoload": {
+        "psr-0": {
+            "Core\\DI": ""
+        }
+    },
+    "type": "library",
+    "homepage": "https://github.com/Tekkla/core-di",
+    "authors": [
+        {
+            "name": "Michael Zorn",
+            "email": "tekkla@tekkla.de",
+            "role": "Developer"
+        }
+    ]
+}
