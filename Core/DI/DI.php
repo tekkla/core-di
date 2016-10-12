@@ -229,7 +229,7 @@ class DI implements \ArrayAccess
             }
 
             // If parameter is optional and not set, set argument to null
-            $args[] = $parameter->isOptional() && ! isset($params[$param_name]) ? null : $params[$param_name];
+            $args[] = $parameter->isOptional() && !isset($params[$param_name]) ? $parameter->getDefaultValue() : $params[$param_name];
         }
 
         // Return result executed method
