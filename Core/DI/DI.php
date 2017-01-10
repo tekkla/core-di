@@ -69,7 +69,12 @@ class DI implements \ArrayAccess
     public function instance(string $class_name, $arguments = null)
     {
         // Initialized the ReflectionClass
-        $reflection = new \ReflectionClass($class_name);
+        Try {
+            $reflection = new \ReflectionClass($class_name);
+        }
+        catch (\Throwable $t) {
+            Throw new DIException($t->getMessage());
+        }
 
         // Creating an instance of the class when no arguments provided
         if (empty($arguments) || count($arguments) == 0) {
