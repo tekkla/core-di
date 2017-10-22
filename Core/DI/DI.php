@@ -214,7 +214,7 @@ else {
      *
      * @return mixed
      */
-    private function getSFV(string $name)
+    public function getSFV(string $name)
     {
         if (! $this->offsetExists($name)) {
             Throw new DIException(sprintf('Service, factory or value "%s" is not mapped.', $name));
