@@ -90,7 +90,7 @@ interface DIInterface extends \ArrayAccess
      *
      * @return mixed
      */
-    protected function getSFV(string $name);
+    public function getSFV(string $name);
 
     /**
      * Checks for a registred SFV
